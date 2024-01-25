@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="pt-br">
+<head>
+    {% include "partials/_head.html" %}
+</head>
+<body>
+  {% include "partials/_header.html" %}
+
+  {% block content %}{% endblock content %}
+
+  {% include "partials/_pagination.html" %}
+
+  {% include "partials/_footer.html" %}
+</body>
+</html>
