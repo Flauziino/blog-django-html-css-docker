@@ -63,4 +63,5 @@
     "editor.suggest.insertMode": "replace",
     "editor.formatOnType": true
   },
+  "python.analysis.autoImportCompletions": true,
   }
