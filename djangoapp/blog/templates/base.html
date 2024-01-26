@@ -6,12 +6,18 @@
     {% include "partials/_head.html" %}
 </head>
 <body>
-  {% include "partials/_header.html" %}
+  {% if site_setup.show_header %}
+    {% include "partials/_header.html" %}
+  {% endif %}
 
   {% block content %}{% endblock content %}
 
-  {% include "partials/_pagination.html" %}
+  {% if site_setup.show_pagination %}
+    {% include "partials/_pagination.html" %}
+  {% endif %}
 
-  {% include "partials/_footer.html" %}
+  {% if site_setup.show_footer %}
+    {% include "partials/_footer.html" %}
+  {% endif %}
 </body>
 </html>
