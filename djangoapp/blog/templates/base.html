@@ -3,7 +3,10 @@
 
 <html lang="pt-br">
 <head>
+
     {% include "partials/_head.html" %}
+    {% block additional_head %}{% endblock additional_head %}
+    
 </head>
 <body>
   {% if site_setup.show_header %}
