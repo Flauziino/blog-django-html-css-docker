@@ -9,4 +9,7 @@ urlpatterns = [
     path('page/<slug:slug>/', views.page, name='page'),
     path('created_by/<int:id>/', views.created_by, name='created_by'),
     path('category/<slug:slug>/', views.category, name='category'),
+    path('tag/<slug:slug>/', views.tags, name='tag'),
+    path('search/', views.search, name='search'),
+
 ]
